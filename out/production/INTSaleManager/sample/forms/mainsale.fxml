@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import eu.schudt.javafx.controls.calendar.*?>
+<?import eu.schudt.javafx.controls.calendar.DatePicker?>
+<?import java.lang.*?>
+<?import java.net.*?>
+<?import java.util.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?scenebuilder-classpath-element ../../../javafx-datepicker-0.0.2.jar?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="600.0" prefWidth="800.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.MainSale">
+  <children>
+    <Label layoutX="14.0" layoutY="14.0" text="Label" />
+    <Label layoutY="14.0" text="Label" AnchorPane.rightAnchor="14.0" />
+    <Separator layoutY="30.0" prefWidth="200.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" />
+    <ComboBox layoutY="44.0" maxWidth="100.0" minWidth="100.0" prefWidth="100.0" AnchorPane.leftAnchor="14.0">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <Label layoutX="14.0" layoutY="32.0" text="Клиент:">
+      <font>
+        <Font size="10.0" fx:id="x1" />
+      </font>
+    </Label>
+    <Label font="$x1" layoutX="123.0" layoutY="32.0" text="Дата реализации:" />
+    <DatePicker fx:id="datapicker" layoutX="123.0" layoutY="44.0" prefWidth="100.0" />
+    <Label font="$x1" layoutX="235.0" layoutY="32.0" text="Номер реализации:" />
+    <TextField layoutX="235.0" layoutY="44.0" prefWidth="100.0" />
+    <ComboBox editable="true" layoutX="14.0" layoutY="88.0" prefWidth="100.0">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <Label font="$x1" layoutX="14.0" layoutY="76.0" text="Товар:" />
+    <Label font="$x1" layoutX="123.0" layoutY="76.0" text="Валюта:" />
+    <ComboBox layoutX="123.0" layoutY="88.0" prefWidth="50.0">
+      <items>
+        <FXCollections fx:factory="observableArrayList">
+          <String fx:value="Item 1" />
+          <String fx:value="Item 2" />
+          <String fx:value="Item 3" />
+        </FXCollections>
+      </items>
+    </ComboBox>
+    <TextField layoutX="184.0" layoutY="88.0" prefWidth="50.0" />
+    <Label font="$x1" layoutX="184.0" layoutY="76.0" text="Вход:" />
+    <TextField layoutX="235.0" layoutY="88.0" prefWidth="50.0" />
+    <Label font="$x1" layoutX="235.0" layoutY="76.0" text="Кол-во:" />
+    <TextField layoutX="292.0" layoutY="88.0" prefWidth="50.0" />
+    <Label font="$x1" layoutX="292.0" layoutY="76.0" text="Выход:" />
+    <Button layoutX="353.0" layoutY="89.0" mnemonicParsing="false" text="Добавить" />
+    <ListView layoutX="14.0" layoutY="117.0" prefHeight="183.0" prefWidth="422.0" />
+    <Label layoutX="336.0" layoutY="300.0" text="Итого:" />
+    <Label layoutX="379.0" layoutY="300.0" prefWidth="57.0" text="Label" />
+    <Label layoutX="317.0" layoutY="316.0" text="Прибыль:" />
+    <Label layoutX="379.0" layoutY="316.0" prefWidth="57.0" text="Label" />
+    <Label layoutX="14.0" layoutY="303.0" text="Курс доллара на сегодня:" />
+    <Label layoutX="184.0" layoutY="303.0" text="Label" />
+    <ListView prefHeight="254.0" prefWidth="772.0" AnchorPane.bottomAnchor="14.0" AnchorPane.leftAnchor="14.0" AnchorPane.rightAnchor="14.0" />
+  </children>
+</AnchorPane>
