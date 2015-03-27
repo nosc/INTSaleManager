@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.paint.*?>
+
+<AnchorPane id="AnchorPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="300.0" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="sample.StartController">
+  <children>
+    <ListView fx:id="baselist" layoutX="14.0" layoutY="14.0" onMouseClicked="#baselistmouseclick" prefHeight="272.0" prefWidth="257.0" />
+    <Button fx:id="baseenter" disable="true" layoutX="286.0" layoutY="14.0" mnemonicParsing="false" onAction="#enter" prefWidth="100.0" text="Войти" />
+    <Button fx:id="adminenter" disable="true" layoutX="286.0" layoutY="45.0" mnemonicParsing="false" onAction="#admin" prefWidth="100.0" text="Админка" />
+    <Separator layoutX="271.0" layoutY="78.0" prefWidth="129.0" />
+    <Button fx:id="baseedit" disable="true" layoutX="286.0" layoutY="82.0" mnemonicParsing="false" onAction="#edit" prefWidth="100.0" text="Изенить" />
+    <Button fx:id="baseadd" layoutX="286.0" layoutY="110.0" mnemonicParsing="false" onAction="#add" prefWidth="100.0" text="Добавить" />
+    <Button fx:id="basedrop" disable="true" layoutX="286.0" layoutY="139.0" mnemonicParsing="false" onAction="#drop" prefWidth="100.0" text="Удалить" />
+    <Button fx:id="exit" layoutX="286.0" layoutY="265.0" mnemonicParsing="false" onAction="#exit" prefWidth="100.0" text="Выход" />
+  </children>
+</AnchorPane>
